@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intervjufrågor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Intervjufrågor</h1>
+
+    <div class="qa-container">
+        <div class="qa-item">
+            <p class="question">Vilka yrkesroller finns inom frontend/UX på ert företag?</p>
+            <p class="answer">Exempel: Frontendutvecklare, UX-designer, UI-designer, produktägare.</p>
+        </div>
+
+        <div class="qa-item">
+            <p class="question">Vilka är deras ansvar och arbetsuppgifter?</p>
+            <p class="answer">Frontendutvecklare kodar gränssnitt, UX-designers fokuserar på användarflöden och
+                research, UI-designers skapar visuella element.</p>
+        </div>
+
+        <div class="qa-item">
+            <p class="question">Hur samarbetar utvecklare och designers i projekt?</p>
+            <p class="answer">Genom regelbundna möten, designreviews och verktyg som Figma eller Jira för att följa
+                arbetsflödet.</p>
+        </div>
+
+        <div class="qa-item">
+            <p class="question">Vilka designverktyg och prototypverktyg används?</p>
+            <p class="answer">Figma, Adobe XD, Sketch, ibland prototyper direkt i webbläsaren.</p>
+        </div>
+
+        <div class="qa-item">
+            <p class="question">Hur arbetar ni med tillgänglighet (WCAG 2.2) i design och utveckling?</p>
+            <p class="answer">Genom att följa WCAG-riktlinjer, testa med skärmläsare och färgkontraster, samt göra
+                användartester med olika målgrupper.</p>
+        </div>
+
+        <div class="qa-item">
+            <p class="question">Hur arbetar ni med användartester och insamling av feedback?</p>
+            <p class="answer">Via användartester, feedbackformulär, A/B-testning och direkt observation av användare.
+            </p>
+        </div>
+
+        <div class="qa-item">
+            <p class="question">Hur ser en typisk arbetsprocess ut när ni startar ett nytt projekt?</p>
+            <p class="answer">Idé → research → prototyp → test → utveckling → lansering → uppföljning och förbättring.
+            </p>
+        </div>
+
+        <div class="qa-item">
+            <p class="question">Hur säkerställer ni att design och kod hänger ihop i projektet?</p>
+            <p class="answer">Genom designsystem, komponentbibliotek och regelbundna design- och kodreviews.</p>
+        </div>
+
+        <div class="qa-item">
+            <p class="question">Vilka färdigheter ser ni som viktigast för en junior frontend/UX att utveckla?</p>
+            <p class="answer">HTML, CSS, grundläggande JavaScript, designprinciper, kommunikation och användarfokus.</p>
+        </div>
+
+        <div class="qa-item">
+            <p class="question">Egen fråga 1?</p>
+            <p class="answer">Svar på egen fråga 1.</p>
+        </div>
+
+        <div class="qa-item">
+            <p class="question">Egen fråga 2?</p>
+            <p class="answer">Svar på egen fråga 2.</p>
+        </div>
+
+        <div class="qa-item">
+            <p class="question">Egen fråga 3?</p>
+            <p class="answer">Svar på egen fråga 3.</p>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll(".question").forEach(q => {
+            q.addEventListener("click", () => {
+                const answer = q.nextElementSibling;
+                answer.style.display = answer.style.display === "block" ? "none" : "block";
+            });
+        });
+    </script>
+
+</body>
+
+</html>
