@@ -23,14 +23,50 @@
     margin: 0;
     padding: 0;
 }
-/* =====================
-   Q&A PAGE (qa.html)
-   ===================== */
+
 body {
     font-family: Arial, sans-serif;
     background: var(--color-bg);
     color: var(--color-dark-grey);
-    padding: 20px;
+}
+
+/* Typography */
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px; 
+    margin-top: 40px;
+}
+
+.navbar-menu li a {
+    color: var(--color-white); 
+    text-decoration: none;
+    font-size: 16px;
+    font-weight:bolder;
+}
+
+.navbar-menu li a:hover {
+    text-decoration: underline;
+    color: var(--color-white);
+    
+}
+
+/* Components */
+
+.navbar {
+    display: flex;
+    background-color: var(--color-primary);
+    width: 100%; 
+    padding: 20px; 
+    justify-content: center;
+}
+
+.navbar-menu  {
+    display:flex; 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    gap: 5em; 
 }
 
 .qa-container {
@@ -57,45 +93,6 @@ body {
     color: var(--color-mid-grey);
 }
 
-/* Index.html*/
-
-.navbar {
-    display: flex;
-    background-color: var(--color-primary);
-    width: 100%; 
-    padding: 20px; 
-    justify-content: center;
-}
-
-.navbar-menu  {
-    display:flex; 
-    list-style: none; 
-    padding: 0; 
-    margin: 0; 
-    gap: 5em; 
-}
-
-/* Typography */
-
-h1 {
-    text-align: center;
-    margin-bottom: 30px;
-    margin-top: 40px;
-}
-
-.navbar-menu li a {
-    color: var(--color-white); 
-    text-decoration: none;
-    font-size: 16px;
-    font-weight:bolder;
-}
-
-.navbar-menu li a:hover {
-    text-decoration: underline;
-    color: var(--color-white);
-    
-}
-
 /* Layout */
 
 .mainsect, .mainsect2{
@@ -112,6 +109,8 @@ h1 {
 @media only screen and (min-width: 600px) {
     /* Typography */
 
+    /* Components */
+
     /* Layout */
 
     /* Page-specific */
@@ -119,6 +118,8 @@ h1 {
 
 @media only screen and (min-width: 768px) {
     /* Typography */
+
+    /* Components */
 
     /* Layout */
 
@@ -128,6 +129,8 @@ h1 {
 @media only screen and (min-width: 992px) {
     /* Typography */
 
+    /* Components */
+
     /* Layout */
 
     /* Page-specific */
@@ -135,6 +138,8 @@ h1 {
 
 @media only screen and (min-width: 1200px) {
     /* Typography */
+
+    /* Components */
 
     /* Layout */
 
