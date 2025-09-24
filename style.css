@@ -1,10 +1,15 @@
 /* Color variables */
 
 :root {
-    --color-bg: #fff;
-    --color-primary: #fff;
-    --color-secondary: #fff;
-    --color-tertiary: #fff; 
+    --color-bg: #f9f9f9;
+    --color-primary: #9667e1; /* Exempelfärger, vi bestämmer tillsammans sen */
+    --color-secondary: #7a7cf6; /* Exempelfärger, vi bestämmer tillsammans sen */
+    --color-tertiary: #cb0bc2; /* Exempelfärger, vi bestämmer tillsammans sen */
+    --color-white: #fff;
+    --color-light-grey: #c0c0c0;
+    --color-mid-grey: #555;
+    --color-dark-grey: #333;
+    --color-shadow: rgba(0, 0, 0, 0.1)
 
     /* Inga färger bestämda än.*/
     /* När vi applicerar en färg på ett element, skriv color: var(--din-valda-färgvariabel) */
@@ -23,15 +28,9 @@
    ===================== */
 body {
     font-family: Arial, sans-serif;
-    background: #f9f9f9;
-    color: #333;
+    background: var(--color-bg);
+    color: var(--color-dark-grey);
     padding: 20px;
-}
-
-h1 {
-    text-align: center;
-    margin-bottom: 30px;
-    margin-top: 40px;
 }
 
 .qa-container {
@@ -40,9 +39,9 @@ h1 {
 }
 
 .qa-item {
-    background: #fff;
+    background: var(--color-white);
     border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 6px var(--color-shadow);
     margin-bottom: 15px;
     padding: 20px;
 }
@@ -55,24 +54,17 @@ h1 {
 .answer {
     display: none;
     margin-top: 10px;
-    color: #555;
+    color: var(--color-mid-grey);
 }
 
 /* Index.html*/
 
-body {
-    margin: 0; 
-    padding: 0; 
-}
-
 .navbar {
     display: flex;
-    background-color: black;
+    background-color: var(--color-primary);
     width: 100%; 
     padding: 20px; 
     justify-content: center;
-    
-    
 }
 
 .navbar-menu  {
@@ -83,8 +75,16 @@ body {
     gap: 5em; 
 }
 
+/* Typography */
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
 .navbar-menu li a {
-    color: white; 
+    color: var(--color-white); 
     text-decoration: none;
     font-size: 16px;
     font-weight:bolder;
@@ -92,26 +92,51 @@ body {
 
 .navbar-menu li a:hover {
     text-decoration: underline;
-    color: #fff;
+    color: var(--color-white);
     
 }
+
+/* Layout */
 
 .mainsect, .mainsect2{
     display: flex;
     margin: 20px; 
     padding: 20px; 
-    
     max-width: 75%;
     margin: 0 auto;
     margin-bottom: 30px;
 }
 
-
-
-
-/* Typography */
-
-/* Layout */
-
 /* Page-specific */
 
+@media only screen and (min-width: 600px) {
+    /* Typography */
+
+    /* Layout */
+
+    /* Page-specific */
+}
+
+@media only screen and (min-width: 768px) {
+    /* Typography */
+
+    /* Layout */
+
+    /* Page-specific */
+}
+
+@media only screen and (min-width: 992px) {
+    /* Typography */
+
+    /* Layout */
+
+    /* Page-specific */
+}
+
+@media only screen and (min-width: 1200px) {
+    /* Typography */
+
+    /* Layout */
+
+    /* Page-specific */
+} 
