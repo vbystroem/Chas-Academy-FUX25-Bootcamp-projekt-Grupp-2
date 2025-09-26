@@ -95,12 +95,17 @@ h1 {
 
 /* Layout */
 
-.mainsect, .mainsect2{
+.mainsect {
     display: flex;
+    flex-direction: column;
     margin: 20px; 
     padding: 20px; 
     max-width: 75%;
     margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.section1 {
     margin-bottom: 30px;
 }
 
