@@ -2,18 +2,20 @@
 
 :root {
     --color-bg: #f9f9f9;
-    --color-primary: #9667e1; /* Exempelfärger, vi bestämmer tillsammans sen */
-    --color-secondary: #7a7cf6; /* Exempelfärger, vi bestämmer tillsammans sen */
-    --color-tertiary: #cb0bc2; /* Exempelfärger, vi bestämmer tillsammans sen */
+    --color-primary: #9667e1;
+    /* Exempelfärger, vi bestämmer tillsammans sen */
+    --color-secondary: #7a7cf6;
+    /* Exempelfärger, vi bestämmer tillsammans sen */
+    --color-tertiary: #cb0bc2;
+    /* Exempelfärger, vi bestämmer tillsammans sen */
     --color-white: #fff;
     --color-light-grey: #c0c0c0;
     --color-mid-grey: #555;
     --color-dark-grey: #333;
     --color-shadow: rgba(0, 0, 0, 0.1)
-
-    /* Inga färger bestämda än.*/
-    /* När vi applicerar en färg på ett element, skriv color: var(--din-valda-färgvariabel) */
-    /* läs mer på MDN web docs: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_cascading_variables/Using_CSS_custom_properties */
+        /* Inga färger bestämda än.*/
+        /* När vi applicerar en färg på ett element, skriv color: var(--din-valda-färgvariabel) */
+        /* läs mer på MDN web docs: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_cascading_variables/Using_CSS_custom_properties */
 }
 
 /* Basic styling */
@@ -34,21 +36,21 @@ body {
 
 h1 {
     text-align: center;
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
     margin-top: 40px;
 }
 
 .navbar-menu li a {
-    color: var(--color-white); 
+    color: var(--color-white);
     text-decoration: none;
     font-size: 16px;
-    font-weight:bolder;
+    font-weight: bolder;
 }
 
 .navbar-menu li a:hover {
     text-decoration: underline;
     color: var(--color-white);
-    
+
 }
 
 /* Components */
@@ -56,17 +58,17 @@ h1 {
 .navbar {
     display: flex;
     background-color: var(--color-primary);
-    width: 100%; 
-    padding: 20px; 
+    width: 100%;
+    padding: 20px;
     justify-content: center;
 }
 
-.navbar-menu  {
-    display:flex; 
-    list-style: none; 
-    padding: 0; 
-    margin: 0; 
-    gap: 5em; 
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 5em;
 }
 
 .qa-container {
@@ -95,10 +97,11 @@ h1 {
 
 /* Layout */
 
-.mainsect, .mainsect2{
+.mainsect,
+.mainsect2 {
     display: flex;
-    margin: 20px; 
-    padding: 20px; 
+    margin: 20px;
+    padding: 20px;
     max-width: 75%;
     margin: 0 auto;
     margin-bottom: 30px;
@@ -144,4 +147,69 @@ h1 {
     /* Layout */
 
     /* Page-specific */
-} 
+}
+
+
+.team-img {
+    width: 200px;
+    /* Alla bilder blir lika breda */
+    height: auto;
+    /* Behåller proportionerna */
+    border-radius: 8px;
+    /* Valfritt: rundade hörn */
+    display: block;
+    /* Tar bort små “luckor” under bilden */
+    margin: 0 auto;
+    /* Centrerar bilden i sin container */
+}
+
+article {
+    text-align: center;
+    /* Gör att rubrik, text och länk centreras */
+    margin-bottom: 40px;
+    /* Ger luft mellan personerna */
+}
+
+
+.team {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* En kolumn som standard (mobil) */
+    gap: 40px;
+    /* Avstånd mellan rutorna */
+    max-width: 900px;
+    /* Gör att innehållet inte blir för brett */
+    margin: 0 auto;
+    /* Centrerar hela sektionen */
+    padding: 20px;
+}
+
+@media (min-width: 768px) {
+    .team {
+        grid-template-columns: 1fr 1fr;
+        /* Två kolumner på större skärmar */
+    }
+}
+
+article {
+    text-align: center;
+    background: #f9f9f9;
+    /* Ljus bakgrund för varje ruta (valfritt) */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    /* Liten skugga för “kort-känsla” */
+}
+
+.team-img {
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto 15px;
+    /* Centrerad + lite luft under bilden */
+    width: 300px;
+    object-fit: scale-down;
+    border-radius: 10px;
+
+}
+
+.img-container {} 
