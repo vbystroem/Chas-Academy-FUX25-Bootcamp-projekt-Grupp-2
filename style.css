@@ -2,18 +2,20 @@
 
 :root {
     --color-bg: #f9f9f9;
-    --color-primary: #9667e1; /* Exempelfärger, vi bestämmer tillsammans sen */
-    --color-secondary: #7a7cf6; /* Exempelfärger, vi bestämmer tillsammans sen */
-    --color-tertiary: #cb0bc2; /* Exempelfärger, vi bestämmer tillsammans sen */
+    --color-primary: #9667e1;
+    /* Exempelfärger, vi bestämmer tillsammans sen */
+    --color-secondary: #7a7cf6;
+    /* Exempelfärger, vi bestämmer tillsammans sen */
+    --color-tertiary: #cb0bc2;
+    /* Exempelfärger, vi bestämmer tillsammans sen */
     --color-white: #fff;
     --color-light-grey: #c0c0c0;
     --color-mid-grey: #555;
     --color-dark-grey: #333;
     --color-shadow: rgba(0, 0, 0, 0.1)
-
-    /* Inga färger bestämda än.*/
-    /* När vi applicerar en färg på ett element, skriv color: var(--din-valda-färgvariabel) */
-    /* läs mer på MDN web docs: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_cascading_variables/Using_CSS_custom_properties */
+        /* Inga färger bestämda än.*/
+        /* När vi applicerar en färg på ett element, skriv color: var(--din-valda-färgvariabel) */
+        /* läs mer på MDN web docs: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_cascading_variables/Using_CSS_custom_properties */
 }
 
 /* Basic styling */
@@ -34,21 +36,21 @@ body {
 
 h1 {
     text-align: center;
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
     margin-top: 40px;
 }
 
 .navbar-menu li a {
-    color: var(--color-white); 
+    color: var(--color-white);
     text-decoration: none;
     font-size: 16px;
-    font-weight:bolder;
+    font-weight: bolder;
 }
 
 .navbar-menu li a:hover {
     text-decoration: underline;
     color: var(--color-white);
-    
+
 }
 
 /* Components */
@@ -56,17 +58,17 @@ h1 {
 .navbar {
     display: flex;
     background-color: var(--color-primary);
-    width: 100%; 
-    padding: 20px; 
+    width: 100%;
+    padding: 20px;
     justify-content: center;
 }
 
-.navbar-menu  {
-    display:flex; 
-    list-style: none; 
-    padding: 0; 
-    margin: 0; 
-    gap: 5em; 
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 5em;
 }
 
 .qa-container {
