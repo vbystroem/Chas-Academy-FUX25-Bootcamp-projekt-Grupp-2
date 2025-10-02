@@ -1,8 +1,10 @@
 /* Color variables */
 
 :root {
-    --color-bg: #f9f9f9;
-    --color-primary: #9667e1;
+    --color-bg: #fff;
+    --color-bg2: #e8fbf6;
+    --color-primary: #022d21;
+    /* --color-primary: #216869; */
     /* Exempelfärger, vi bestämmer tillsammans sen */
     --color-secondary: #7a7cf6;
     /* Exempelfärger, vi bestämmer tillsammans sen */
@@ -11,8 +13,8 @@
     --color-white: #fff;
     --color-light-grey: #c0c0c0;
     --color-mid-grey: #555;
-    --color-dark-grey: #333;
-    --color-shadow: rgba(0, 0, 0, 0.1)
+    --color-dark-grey: #000;
+    --color-shadow: rgba(0, 10, 0, 0.1)
         /* Inga färger bestämda än.*/
         /* När vi applicerar en färg på ett element, skriv color: var(--din-valda-färgvariabel) */
         /* läs mer på MDN web docs: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_cascading_variables/Using_CSS_custom_properties */
@@ -27,7 +29,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Montserrat, sans-serif;
     background: var(--color-bg);
     color: var(--color-dark-grey);
 }
@@ -36,21 +38,29 @@ body {
 
 h1 {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 3.5rem;
     margin-top: 40px;
+    font-weight: 600;
+}
+
+h2 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    margin-top: 1.25rem;
 }
 
 .navbar-menu li a {
-    color: var(--color-white);
+    color: var(--color-bg2);
     text-decoration: none;
     font-size: 16px;
-    font-weight: bolder;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
 }
 
 .navbar-menu li a:hover {
-    text-decoration: underline;
-    color: var(--color-white);
-
+    color: #000;
+    background-color: var(--color-bg2);
 }
 
 /* Components */

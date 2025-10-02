@@ -41,21 +41,36 @@ article {
 
 article {
     text-align: center;
-    background: #f9f9f9;
+    background: var(--color-bg2);
     /* Ljus bakgrund för varje ruta (valfritt) */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 2.5rem;
+    border-radius: 10px;/* 
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); */
     /* Liten skugga för “kort-känsla” */
 }
 
 .team-img {
     border-radius: 8px;
     display: block;
-    margin: 0 auto 15px;
+    margin: 15px auto 15px;
     /* Centrerad + lite luft under bilden */
     width: 300px;
     object-fit: scale-down;
     border-radius: 10px;
 
+}
+
+.textbox {
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.link {
+    margin-top: 8rem;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
 }
