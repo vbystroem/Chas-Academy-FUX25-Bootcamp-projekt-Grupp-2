@@ -37,10 +37,19 @@ body {
 /* Typography */
 
 h1 {
-    text-align: center;
+    text-align:center;
     margin-bottom: 3.5rem;
     margin-top: 40px;
     font-weight: 600;
+}
+
+.heading {
+    margin-bottom:3rem;
+    margin-top: 2rem;
+    font-weight: 600;
+    text-align: left ;
+   
+
 }
 
 h2 {
