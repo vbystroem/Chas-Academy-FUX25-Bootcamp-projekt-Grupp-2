@@ -1,71 +1,141 @@
+.heading {
+    display: none;
+}
+
+.heading2 {
+    color: white;
+    text-shadow: 0 0.2rem 0.5rem var(--color-shadow2);
+    margin: 2rem;
+}
+
+.frontpic {
+  margin-bottom: 1rem;
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+}
+
 .waiter-pic {
-    height: auto;
-    max-width: 95%;
-    object-fit: cover;
-    border-radius: 2rem;
-    align-items: center;
-    margin-right: 4rem;
-   
-    
-   
+  height: 100%;
+  display: none;
+}
+
+.waiter-pic2 {
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  align-items: center;
+  background-image: url("img/food2-tablet.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 .mainsect {
-
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-   
-    
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .indexcontainer {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content:center ;
-    align-content: center;
-}
-@media only screen and (min-width: 968px){
-    
-
-.section1, .section2 , .section3{
-    padding: 1rem ;
-    margin-left: 3rem;
-    
-    
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-inline: 1rem;
 }
 
-.mainsect {
+
+.index-p {
+  margin-bottom: 1.5rem;
+}
+
+.text-container {
+  background-color: var(--color-bg2);
+  padding-inline: 2rem;
+}
+
+.section1>h2 {
+    margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 480px) {
+  .text-container {
+    margin-inline: 1rem;
+    border-radius: 1rem;
+  }
+
+  .frontpic {
+    margin-inline: 1rem;
+    margin-top: 1rem;
+    width: 95vw;
+  }
+
+  .waiter-pic2 {
+    border-radius: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .frontpic {
+    height: 50vh;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .mainsect {
     display: flex;
     flex-direction: row;
-}
+  }
 
-.text-conatiner {
+  .text-container {
     display: flex;
     flex-direction: column;
-    
+    padding-inline: 0;
+    width: 65ch;
+  }
 
-}
-
-.indexcontainer {
+  .indexcontainer {
     width: 95%;
     display: flex;
-    justify-content: space-between ;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: row-reverse;
     background-color: var(--color-bg2);
     padding-block: 2rem;
     margin-block: 2rem;
+    padding-inline: 4rem;
     border-radius: 2rem;
-    gap: 5rem;
-}
+  }
 
-.waiter-pic {
-    max-width: 40%;
-    justify-content: center;
-    align-items: center;
-}
+  .frontpic {
+    display: flex;
+    justify-content: end;
+    height: 100%;
+  }
 
+  .waiter-pic {
+    width: 80%;
+    height: 100%;
+    display: block;
 
+    border-radius: 2rem;
+  }
+
+  .waiter-pic2 {
+    display: none;
+  }
+
+  .heading {
+    display: block;
+  }
+
+  .heading2 {
+    display: none;
+  }
 }

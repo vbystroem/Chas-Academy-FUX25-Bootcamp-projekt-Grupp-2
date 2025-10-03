@@ -1,93 +1,121 @@
 /* Color variables */
 
 :root {
-    --color-bg: #fff;
-    --color-bg2: #e8fbf6;
-    --color-primary: #022d21;
-    /* --color-primary: #216869; */
-    /* Exempelfärger, vi bestämmer tillsammans sen */
-    --color-secondary: #7a7cf6;
-    /* Exempelfärger, vi bestämmer tillsammans sen */
-    --color-tertiary: #cb0bc2;
-    /* Exempelfärger, vi bestämmer tillsammans sen */
-    --color-white: #fff;
-    --color-light-grey: #c0c0c0;
-    --color-mid-grey: #555;
-    --color-dark-grey: #000;
-    --color-shadow: rgba(0, 10, 0, 0.1)
-        /* Inga färger bestämda än.*/
-        /* När vi applicerar en färg på ett element, skriv color: var(--din-valda-färgvariabel) */
-        /* läs mer på MDN web docs: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_cascading_variables/Using_CSS_custom_properties */
+  --color-bg: #fff;
+  --color-bg2: #e8fbf6;
+  --color-primary: #022d21;
+  /* --color-primary: #216869; */
+  /* Exempelfärger, vi bestämmer tillsammans sen */
+  --color-secondary: #7a7cf6;
+  /* Exempelfärger, vi bestämmer tillsammans sen */
+  --color-tertiary: #cb0bc2;
+  /* Exempelfärger, vi bestämmer tillsammans sen */
+  --color-white: #fff;
+  --color-light-grey: #c0c0c0;
+  --color-mid-grey: #555;
+  --color-dark-grey: #000;
+  --color-shadow: rgba(0, 10, 0, 0.1);
+  --color-shadow2: rgba(0, 10, 0, 0.8);
+  /* Inga färger bestämda än.*/
+  /* När vi applicerar en färg på ett element, skriv color: var(--din-valda-färgvariabel) */
+  /* läs mer på MDN web docs: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_cascading_variables/Using_CSS_custom_properties */
 }
 
 /* Basic styling */
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
 }
 
+@media screen and (min-width: 480px) {
+  * {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 684px) {
+  * {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  * {
+    font-size: 18px;
+  }
+}
+
+
+
 body {
-    font-family: Montserrat, sans-serif;
-    background: var(--color-bg);
-    color: var(--color-dark-grey);
+  font-family: Montserrat, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-dark-grey);
 }
 
 /* Typography */
 
 h1 {
-    text-align:center;
-    margin-bottom: 3.5rem;
-    margin-top: 40px;
-    font-weight: 600;
+  text-align: center;
+  font-weight: 600;
+  font-size: 2rem;
 }
 
 .heading {
-    margin-bottom:3rem;
-    margin-top: 0.1rem;
-    font-weight: 600;
-    text-align: left ;
-   
+  margin-block: 1.75rem;
+  font-weight: 600;
+  text-align: left;
+}
 
+.team-heading {
+    margin-block: 2rem;
 }
 
 h2 {
-    font-weight: 600;
-    margin-bottom: 1rem;
-    margin-top: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
 }
 
 .navbar-menu li a {
-    color: var(--color-bg2);
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 500;
-    padding: 1rem 2rem;
-    border-radius: 0.5rem;
+  color: var(--color-bg2);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
 }
 
 .navbar-menu li a:hover {
-    color: #000;
-    background-color: var(--color-bg2);
+  color: #000;
+  background-color: var(--color-bg2);
 }
 
 /* Components */
 
 .navbar {
-    display: flex;
-    background-color: var(--color-primary);
-    width: 100%;
-    padding: 20px;
-    justify-content: center;
+  display: flex;
+  background-color: var(--color-primary);
+  width: 100%;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar-menu {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    gap: 5em;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+
+br {
+  margin-bottom: 1ex;
 }
 
 /* Layout */
@@ -95,43 +123,41 @@ h2 {
 /* Page-specific */
 
 @media only screen and (min-width: 600px) {
-    /* Typography */
+  /* Typography */
 
-    /* Components */
+  /* Components */
 
-    /* Layout */
+  /* Layout */
 
-    /* Page-specific */
+  /* Page-specific */
 }
 
 @media only screen and (min-width: 768px) {
-    /* Typography */
+  /* Typography */
 
-    /* Components */
+  /* Components */
 
-    /* Layout */
+  /* Layout */
 
-    /* Page-specific */
+  /* Page-specific */
 }
 
 @media only screen and (min-width: 992px) {
-    /* Typography */
+  /* Typography */
 
-    /* Components */
+  /* Components */
 
-    /* Layout */
+  /* Layout */
 
-    /* Page-specific */
+  /* Page-specific */
 }
 
 @media only screen and (min-width: 1200px) {
-    /* Typography */
+  /* Typography */
 
-    /* Components */
+  /* Components */
 
-    /* Layout */
+  /* Layout */
 
-    /* Page-specific */
+  /* Page-specific */
 }
-
-
