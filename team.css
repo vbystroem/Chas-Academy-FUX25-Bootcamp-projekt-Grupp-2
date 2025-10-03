@@ -30,6 +30,7 @@ article {
     margin: 0 auto;
     /* Centrerar hela sektionen */
     padding: 20px;
+
 }
 
 @media (min-width: 768px) {
@@ -44,7 +45,10 @@ article {
     background: var(--color-bg2);
     /* Ljus bakgrund för varje ruta (valfritt) */
     padding: 2.5rem;
-    border-radius: 10px;/* 
+    border-radius: 10px;
+    
+    /* 
+    
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); */
     /* Liten skugga för “kort-känsla” */
 }
@@ -60,16 +64,25 @@ article {
 
 }
 
+.link {
+    transition: 0.4s ease;
+}
+
+.link:hover {
+    transform: scale(1.03);
+}
+
 .textbox {
     margin-bottom: 15px;
 }
 
 p {
     margin-bottom: 1rem;
+    font-weight: lighter;
 }
 
 .link {
-    margin-top: 8rem;
+    margin-top: rem;
     text-decoration: none;
     color: #000;
     font-weight: 600;
