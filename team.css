@@ -11,14 +11,6 @@
     /* Centrerar bilden i sin container */
 }
 
-article {
-    text-align: center;
-    /* Gör att rubrik, text och länk centreras */
-    margin-bottom: 40px;
-    /* Ger luft mellan personerna */
-}
-
-
 .team {
     display: grid;
     grid-template-columns: 1fr;
@@ -29,11 +21,24 @@ article {
     /* Gör att innehållet inte blir för brett */
     margin: 0 auto;
     /* Centrerar hela sektionen */
-    padding: 20px;
 
 }
 
-@media (min-width: 768px) {
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    text-align: center;
+    /* Gör att rubrik, text och länk centreras */
+    margin-bottom: 40px;
+    /* Ger luft mellan personerna */
+    max-width: 400px;
+}
+
+@media (min-width: 992px) {
     .team {
         grid-template-columns: 1fr 1fr;
         /* Två kolumner på större skärmar */
