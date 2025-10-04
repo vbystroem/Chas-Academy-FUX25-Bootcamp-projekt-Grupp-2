@@ -18,7 +18,7 @@
 
 .qa-item {
     width: 90vw;
-    background: #d1f3eb;
+    background: #c4f1e7;
     border-radius: 8px;
     box-shadow: 0 2px 6px var(--color-shadow);
     margin-bottom: 15px;
@@ -35,7 +35,21 @@
     display: none;
     margin-top: 10px;
     color: var(--dark-grey);
+    /* font-size: 16px; */
 }
+
+.qa-item ul {
+    list-style-type: none;
+    padding-left: 0;
+ 
+}
+
+.qa-item ul li::before {
+    content: "– ";
+    /* strecket som visas före varje punkt */
+   
+}
+
 
 @media screen and (min-width: 768px) {
     .qa-item {
