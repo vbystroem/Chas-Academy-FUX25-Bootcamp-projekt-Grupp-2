@@ -244,15 +244,13 @@
 }
 
 @media screen and (min-width: 684px) {
-  .stack__list {
-    width: min(
-      95%,
-      calc(65ch + 22rem)
-    ); /* 22rem är den sammanlagda summan av paddings + widths på resten av elementet som inte är stack__text-container */
+  .stack__list-design, .stack__list-code {
+    width: min(95%, calc(65ch + 22rem)); /* 22rem är den sammanlagda summan av paddings + widths på resten av elementet som inte är stack__text-container */
   }
 
-  .stack__h2, .stack__h3 {
-    margin-inline: 0;
+  .stack__h2 {
+    width: 95vw;
+    text-align: center;
   }
 
   .stack__item {
