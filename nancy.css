@@ -1,21 +1,26 @@
-.nancy-img{
-width: 100%;
-max-width: 400px;
-height: auto;
-border-radius: 10px;
+.nancy-img {
+
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+
 }
 
 .img-container {
 
-display: flex;
-justify-content: left;
+    margin: 2rem;
+    display: flex;
+    justify-content: left;
 
 }
 
-.alla-texter {
-    text-align:left
-}
+
 
 h1 {
     text-align: left;
+}
+
+.alla-texter {
+    text-align: left
 }
