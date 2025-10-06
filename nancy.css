@@ -3,7 +3,7 @@
     width: 100%;
     max-width: 400px;
     height: auto;
-    border-radius: 8px;
+    border-radius: 10px;
 
 }
 
@@ -11,16 +11,16 @@
 
     margin: 2rem;
     display: flex;
-    justify-content: left;
+    justify-content: center;
 
 }
 
 
 
 h1 {
-    text-align: left;
+    text-align: center;
 }
 
 .alla-texter {
-    text-align: left
+    text-align: center
 }
