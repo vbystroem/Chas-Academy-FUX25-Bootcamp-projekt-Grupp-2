@@ -50,6 +50,11 @@
    
 }
 
+.break {
+    height: 0.8em; /* justera efter önskat avstånd */
+}
+
+
 
 @media screen and (min-width: 768px) {
     .qa-item {
