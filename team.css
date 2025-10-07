@@ -4,7 +4,7 @@
     height: auto;
     /* Behåller proportionerna */
     border-radius: 8px;
-    /* Valfritt: rundade hörn */
+    /* Rundade hörn */
     display: block;
     /* Tar bort små “luckor” under bilden */
     margin: 0 auto;
@@ -50,7 +50,7 @@ article {
 article {
     text-align: center;
     background: var(--color-bg2);
-    /* Ljus bakgrund för varje ruta (valfritt) */
+    /* Ljus bakgrund för varje ruta */
     padding: 2.5rem;
     border-radius: 10px;
     

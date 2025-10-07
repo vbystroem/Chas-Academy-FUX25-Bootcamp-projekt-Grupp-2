@@ -1,0 +1,26 @@
+.nancy-img {
+
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+
+}
+
+.img-container {
+
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+h1 {
+    text-align: center;
+}
+
+.alla-texter {
+    text-align: center
+}
