@@ -1,6 +1,7 @@
 .intervju {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100vw;
 }
 
@@ -29,16 +30,30 @@
     font-size: 1.10rem;
     font-weight: 500;
     cursor: pointer;
+    margin-bottom: 0;
 }
 
 .answer {
     display: none;
-    margin-top: 10px;
+    margin-top: 2rem;
     color: var(--dark-grey);
     /* font-size: 16px; */
 }
 
-.qa-item ul {
+.qa-heading {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.qa-answerheading {
+    font-weight: 500;
+}
+
+.qa-paragraph {
+    margin-bottom: 2ex;
+}
+
+ul {
     list-style-type: none;
     padding-left: 0;
  
