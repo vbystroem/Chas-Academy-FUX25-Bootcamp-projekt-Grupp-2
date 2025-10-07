@@ -15,15 +15,16 @@ body {
 
 h1 {
     margin-bottom: 2rem;
-    font-family:Impact, 'Arial Narrow Bold', sans-serif;
-    font-size: 25px;
+    font-family:"Roboto", Arial, Helvetica;
+    font-weight: 800;
+    font-size: 1.6rem;
     color: rgb(49, 72, 66);
     
 }
 
 h2 {
     margin-bottom: 0.5rem;
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 .mainSect{
     
