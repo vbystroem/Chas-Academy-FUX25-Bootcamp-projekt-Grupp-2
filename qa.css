@@ -1,84 +1,81 @@
 .intervju {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
 }
 
 .qa-container {
-    width: 95%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: var(--color-bg2);
-    padding-block: 2rem;
-    margin-block: 2rem;
-    border-radius: 2rem;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--color-bg2);
+  padding-block: 2rem;
+  margin-block: 2rem;
+  border-radius: 2rem;
 }
 
 .qa-item {
-    width: 90vw;
-    background: #d1f3eb;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px var(--color-shadow);
-    margin-bottom: 15px;
-    padding: 20px;
+  width: 90vw;
+  background: #d1f3eb;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px var(--color-shadow);
+  margin-bottom: 15px;
+  padding: 20px;
+  list-style: decimal;
 }
 
 .question {
-    font-size: 1.10rem;
-    font-weight: 500;
-    cursor: pointer;
-    margin-bottom: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 0;
 }
 
 .answer {
-    display: none;
-    margin-top: 2rem;
-    color: var(--dark-grey);
-    /* font-size: 16px; */
+  display: none;
+  margin-top: 2rem;
+  color: var(--dark-grey);
+  /* font-size: 16px; */
 }
 
 .qa-heading {
-    text-align: center;
-    margin-top: 2rem;
+  text-align: center;
+  margin-top: 2rem;
 }
 
 .qa-answerheading {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .qa-paragraph {
-    margin-bottom: 2ex;
+  margin-bottom: 2ex;
 }
 
 ul {
-    list-style-type: none;
-    padding-left: 0;
- 
+  list-style-type: none;
+  padding-left: 0;
 }
 
 .qa-item ul li::before {
-    content: "– ";
-    /* strecket som visas före varje punkt */
-   
+  content: "– ";
+  /* strecket som visas före varje punkt */
 }
 
 .break {
-    height: 0.8em; /* justera efter önskat avstånd */
+  height: 0.8em; /* justera efter önskat avstånd */
 }
 
-
-
 @media screen and (min-width: 768px) {
-    .qa-item {
-        width: calc(100vw / 3 * 2);
-    }
+  .qa-item {
+    width: calc(100vw / 3 * 2);
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    .qa-item {
-        width: 50vw;
-    }
+  .qa-item {
+    width: 50vw;
+  }
 }
