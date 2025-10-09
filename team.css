@@ -1,0 +1,111 @@
+.team-img {
+    width: 200px;
+    /* Alla bilder blir lika breda */
+    height: auto;
+    /* Behåller proportionerna */
+    border-radius: 8px;
+    /* Rundade hörn */
+    display: block;
+    /* Tar bort små “luckor” under bilden */
+    margin: 0 auto;
+    /* Centrerar bilden i sin container */
+}
+
+.team {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* En kolumn som standard (mobil) */
+    gap: 40px;
+    /* Avstånd mellan rutorna */
+    max-width: 900px;
+    /* Gör att innehållet inte blir för brett */
+    margin: 0 auto;
+    /* Centrerar hela sektionen */
+
+}
+
+@media screen and (min-width: 1920px) {
+    .team {
+        max-width: unset;
+
+    }
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    text-align: center;
+    /* Gör att rubrik, text och länk centreras */
+    margin-bottom: 40px;
+    /* Ger luft mellan personerna */
+    max-width: 400px;
+    
+    height: 750px;
+}
+
+@media (min-width: 992px) {
+    .team {
+        grid-template-columns: 1fr 1fr;
+        /* Två kolumner på större skärmar */
+    }
+}
+
+@media (min-width: 1920px) {
+    .team {
+        grid-template-columns: 400px 400px 400px 400px;
+        /* Två kolumner på större skärmar */
+        justify-content: center;
+    }
+}
+
+article {
+    text-align: center;
+    background: var(--color-bg2);
+    /* Ljus bakgrund för varje ruta */
+    padding: 2.5rem;
+    border-radius: 10px;
+    
+    /* 
+    
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); */
+    /* Liten skugga för “kort-känsla” */
+}
+
+.team-img {
+    border-radius: 8px;
+    display: block;
+    margin: 15px auto 15px;
+    /* Centrerad + lite luft under bilden */
+    width: 300px;
+    object-fit: scale-down;
+    border-radius: 10px;
+
+}
+
+.link {
+    transition: 0.4s ease;
+}
+
+.link:hover {
+    transform: scale(1.03);
+}
+
+.textbox {
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 1rem;
+    font-weight: lighter;
+}
+
+.link {
+    margin-top: rem;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}

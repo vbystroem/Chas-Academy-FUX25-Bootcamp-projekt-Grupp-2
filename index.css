@@ -1,0 +1,266 @@
+.heading {
+  display: none;
+}
+
+.heading2 {
+  color: white;
+  text-shadow: 0 0.2rem 0.5rem var(--color-shadow2);
+  margin: 2rem;
+}
+
+.frontpic {
+  margin-bottom: 1rem;
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+}
+
+.waiter-pic {
+  height: 100%;
+  display: none;
+}
+
+.waiter-pic2 {
+  width: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: center;
+  background-image: url("img/food2-tablet.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainsect {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.indexcontainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-inline: 1rem;
+}
+
+.index-p {
+  max-width: 65ch;
+  margin-bottom: 1.5rem;
+}
+
+.text-container {
+  background-color: var(--color-bg2);
+  padding-inline: 2rem;
+}
+
+.section1 > h2 {
+  margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 480px) {
+  .text-container {
+    margin-inline: 1rem;
+    border-radius: 1rem;
+    width: 95vw;
+  }
+
+  .frontpic {
+    margin-inline: 1rem;
+    margin-top: 1rem;
+    width: 95vw;
+  }
+
+  .waiter-pic2 {
+    border-radius: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .frontpic {
+    height: 50vh;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .mainsect {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 0;
+    width: 65ch;
+  }
+
+  .indexcontainer {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: row-reverse;
+    background-color: var(--color-bg2);
+    padding-block: 2rem;
+    margin-block: 2rem;
+    padding: 4rem;
+    border-radius: 2rem;
+  }
+
+  .section1 > h1 {
+    margin-top: 0;
+  }
+
+  .frontpic {
+    display: flex;
+    justify-content: end;
+    height: 100%;
+    margin-top: 0;
+    width: 50%;
+  }
+
+  .waiter-pic {
+    width: 80%;
+    max-height: 80vh;
+    object-fit: cover;
+    display: block;
+    
+    border-radius: 1rem;
+  }
+
+  .waiter-pic2 {
+    display: none;
+  }
+
+  .heading {
+    display: block;
+  }
+
+  .heading2 {
+    display: none;
+  }
+}
+
+.logo__container {
+  width: 10rem;
+  height: 10rem;
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+.logo {
+  height: 100%;
+  width: auto;
+}
+
+.stack-article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.stack__text-container {
+  max-width: 65ch;
+}
+
+.stack__item {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  margin-block: 2rem;
+  padding: 4rem;
+}
+
+.stack__list-design>.stack__item:nth-of-type(1) {
+  background-color: var(--color-article-1);
+}
+
+.stack__list-design>.stack__item:nth-of-type(2) {
+  background-color: var(--color-article-2);
+}
+
+.stack__list-code>.stack__item:nth-of-type(1) {
+  background-color: var(--color-article-3);
+}
+
+.stack__list-code>.stack__item:nth-of-type(2) {
+  background-color: var(--color-article-4);
+}
+
+.stack__h2, .stack__h3 {
+    margin-inline: 4rem;
+  }
+
+.stack__h2 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.stack__h3 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.stack__h4 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+
+
+.minihero {
+  min-height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stack__quote {
+  margin-top: 2ex;
+  font-style: italic;
+  padding-left: 1rem;
+  border-left: 2px solid #e7a66e;
+}
+
+.stack__quote-foot,
+.stack__quote-cite {
+  margin-top: 1ex;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.stack__link {
+  display: block;
+  color: black;
+  margin-top: 2ex;
+}
+
+@media screen and (min-width: 684px) {
+  .stack__list-design, .stack__list-code {
+    width: min(95%, calc(65ch + 22rem)); /* 22rem är den sammanlagda summan av paddings + widths på resten av elementet som inte är stack__text-container */
+  }
+
+  .stack__h2 {
+    width: 95vw;
+    text-align: center;
+  }
+
+  .stack__item {
+    flex-direction: row;
+    border-radius: 1rem;
+  }
+
+  .logo__container {
+    margin-right: 5rem;
+    margin-bottom: 0;
+    justify-content: center;
+  }
+}

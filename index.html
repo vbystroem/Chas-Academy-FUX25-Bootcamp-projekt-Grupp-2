@@ -1,11 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul class="navbar-menu">
+          <li><a href="index.html"> Home </a></li>
+          <li><a href="qa.html"> Q&A</a></li>
+          <li><a href="team.html"> Team</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="mainsect">
+      <div class="indexcontainer">
+        <div class="frontpic">
+          <img
+            src="img/food2.jpg"
+            alt="bild på en servitör"
+            class="waiter-pic" />
+          <div class="waiter-pic2">
+            <h1 class="heading2">Vår intervju med Andreas från Unmo</h1>
+          </div>
+        </div>
+        <div class="text-container">
+          <section class="section1">
+            <h1 class="heading">Vår intervju med Andreas från Unmo</h1>
+
+            <h2>Kort om Andreas och Unmo:</h2>
+
+            <p class="index-p">
+              Som en del av uppgiften intervjuade vi Andreas, en senior
+              utvecklare som just nu arbetar med både frontend- och
+              backendutveckling på Unmo.<br />
+
+              Unmo är Sveriges största digitala mötesplats för
+              restaurangbranschen. Plattformen är skapad av branschen själv och
+              syftar till att förena restaurangpersonal och arbetsgivare.<br />
+
+              Genom sitt community skapar Unmo möjligheter för både relationer
+              och karriärer att växa. Företaget erbjuder även en plats där
+              varumärken kan utvecklas och stärkas inom branschen. Intervjun med
+              Andreas gav oss värdefulla insikter om både hans roll som
+              utvecklare och hur Unmo arbetar för att stödja branschen.
+            </p>
+          </section>
+
+          <section class="section2">
+            <h2>Om projektarbetet:</h2>
+            <p class="index-p">
+              Det här projektet har handlat om att samarbeta, planera och skapa
+              något tillsammans. Uppgiften gick ut på att intervjua en
+              frontendutvecklare och/eller UX-designer för att få en djupare
+              inblick i branschen och en bättre förståelse för vad vi kan
+              förvänta oss i framtiden när vi själva börjar arbeta efter
+              studierna.
+            </p>
+          </section>
+
+          <section class="section3">
+            <h2>Hur vår arbetsprocess såg ut:</h2>
+            <p class="index-p">
+              Vi inledde arbetet med att sätta upp en tydlig planering och
+              fördela uppgifterna mellan oss i teamet. Genom regelbundna
+              avstämningar kunde vi följa upp vad som blivit gjort, ge varandra
+              feedback och diskutera förbättringar. På det sättet säkerställde
+              vi att alla var delaktiga och att resultatet blev sammanhållet.
+            </p>
+          </section>
+        </div>
+      </div>
+    </main>
+    <article class="stack-article">
+      <div class="minihero">
+        <h2 class="stack__h2">Hur arbetar Unmo med frontend?</h2>
+      </div>
+      <h3 class="stack__h3">Design</h3>
+      <ul class="stack__list-design">
+        <li class="stack__item">
+          <div class="logo__container">
+            <img class="logo" src="./img/figma-logo.svg" alt="Figmas logotyp" />
+          </div>
+          <div class="stack__text-container">
+            <h4 class="stack__h4">Figma</h4>
+            <p class="stack__p">
+              Figma är ett design-och-webbprototyp-program som är
+              industristandard för UX designers på webben. Andreas nämner i
+              intervjun att Figma är hur Unmo bygger
+              <i class="emphasis">"Design Tokens,"</i> vilket är ungefär som
+              komponenter för designval inuti ett designsystem. Ett
+              designsystem, i sin tur, är det kompletta biblioteket för hur ett
+              varumärke ska presenteras på webben.
+            </p>
+            <blockquote
+              cite="https://m3.material.io/foundations/design-tokens/overview"
+              class="stack__quote">
+              "[Design] Tokens make it possible for a design system to have a
+              single source of truth – a repository where style choices are
+              recorded and changes can be tracked."
+              <footer class="stack__quote-foot">
+                &mdash; Material Design,
+                <cite class="stack__quote-cite">"Design Tokens Overview"</cite>
+              </footer>
+            </blockquote>
+            <a class="stack__link" href="https://www.figma.com/" target="_blank"
+              >Läs mer om Figma här</a
+            >
+          </div>
+        </li>
+        <li class="stack__item">
+          <div class="logo__container">
+            <img
+              src="./img/storybook-logo.svg"
+              class="logo"
+              alt="Storybooks logotyp" />
+          </div>
+          <div class="stack__text-container">
+            <h4 class="stack__h4">Storybook</h4>
+            <p class="stack__p">
+              Storybook är ett gratis och open-source verktyg som används för
+              att bygga och dokumentera UI-komponenter isolerat från resten av
+              deras applikation. Det fungerar som ett fristående verktyg där man
+              kan utveckla, testa och visa upp komponenter utan att behöva köra
+              hela appen. Unmo använder Storybook för att samla alla deras
+              komponenter på ett ställe, så att designers och utvecklare har en
+              gemensam plats för dem.
+            </p>
+            <a
+              class="stack__link"
+              href="https://storybook.js.org/"
+              target="_blank"
+              >Läs mer om Storybook här.</a
+            >
+          </div>
+        </li>
+      </ul>
+      <h3 class="stack__h3">Kod</h3>
+      <ul class="stack__list-code">
+        <li class="stack__item">
+          <div class="logo__container">
+            <img
+              class="logo"
+              src="./img/reactnative-logo.svg"
+              alt="Reacts logotyp" />
+          </div>
+          <div class="stack__text-container">
+            <h4 class="stack__h4">React Native</h4>
+            <p class="stack__p">
+              React Native är en version av React (Ett JavaScript ramverk), som
+              är byggt för att skriva <i class="emphasis">native</i>-kod. Native
+              kod är kod som är byggt för ett specifikt operativsystem, i de
+              flesta fallen AndroidOS eller iOS. Alltså är det ett sätt att
+              bygga mobilappar med React. Unmo använder React Native för att
+              bygga deras mobilapp.
+            </p>
+            <a
+              class="stack__link"
+              href="https://reactnative.dev/"
+              target="_blank"
+              >Läs mer om React Native här.</a
+            >
+          </div>
+        </li>
+        <li class="stack__item">
+          <div class="logo__container">
+            <img
+              class="logo"
+              src="./img/nextjs-logo.svg"
+              alt="Next.js logotyp" />
+          </div>
+          <div class="stack__text-container">
+            <h4 class="stack__h4">Next.js</h4>
+            <p class="stack__p">
+              Next.js är ett Fullstackramverk som bygger på React och lägger
+              till backendfunktioner som vanligtvis kräver separat konfiguration
+              i ett standard React-projekt. Unmo använder Next.js som deras
+              JavaScript ramverk.
+            </p>
+            <a class="stack__link" href="https://nextjs.org/" target="_blank"
+              >Läs mer om Next.js här.</a
+            >
+          </div>
+        </li>
+      </ul>
+    </article>
+    <footer class="page-foot">
+      <a
+        class="page-foot__link"
+        href="https://github.com/vbystroem/Chas-Academy-FUX25-Bootcamp-projekt-Grupp-2"
+        >Länk till det här repot</a
+      >
+      <p class="page-foot__copy">
+        &copy; 2025 Latifa Rohani, Nancy Samefors, Veronica Byström, Yacob Hanna
+      </p>
+    </footer>
+  </body>
 </html>
