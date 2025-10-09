@@ -1,0 +1,21 @@
+eedb5b9|yacophanna27|2025-10-07|Merge branch 'Dev' of https://github.com/vbystroem/Chas-Academy-FUX25-Bootcamp-projekt-Grupp-2 into Dev
+bf8f3f2|yacophanna27|2025-10-07|Ändrade typsnittet på h1 och h2
+495d0ee|yacophanna27|2025-10-07|la till br diven på latifas team card
+a403448|yacophanna27|2025-10-07|Merge branch 'Dev' of https://github.com/vbystroem/Chas-Academy-FUX25-Bootcamp-projekt-Grupp-2 into Dev
+98d0731|yacophanna27|2025-10-07|La till 2 nya bilder
+f252b96|yacophanna27|2025-10-07|La in mina bilder i img mappen
+28b23e7|yacophanna27|2025-10-07|Lagt till min a filer till mi egna sida
+41cfb23|yacophanna27|2025-10-04|bytte från UNMO till Unmo i texten på index sidan
+9bea645|yacophanna27|2025-10-04|Ändrade färgen till frågo-containern till en ljusare färg och bytte namnet på webbfliken till "Q&A"
+23a47b5|yacophanna27|2025-10-04|Lagt till font länken på alla sidor och ändrat färg på containern till frågorna
+ca3f67b|yacophanna27|2025-10-03|Ändringar i index och team, fixat hover effekt i team och länkning till vår egna hemsidor
+8d8a014|yacophanna27|2025-10-03|Har lagt till text och bild på index.html
+e6a1c9e|yacophanna27|2025-09-26|fixade text ordningen i index
+7b3ff58|yacophanna27|2025-09-26|ändrarde till en main från 2 mains
+210fd91|yacophanna27|2025-09-20|rättade till css länken i index
+7de6a0e|yacophanna27|2025-09-19|fixat enkel design på navbar och strukturerat index sidan lite
+e5b5e69|yacophanna27|2025-09-19|Merge remote-tracking branch 'origin' into Dev
+405d3ad|yacophanna27|2025-09-19|test
+74ac657|yacophanna27|2025-09-19|la till 2 sections och en footer
+8481aa2|yacophanna27|2025-09-19|la till h1
+d683990|yacophanna27|2025-09-19|Added .gitignore and made a navbar

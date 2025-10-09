@@ -44,9 +44,25 @@ h2 {
     color: aliceblue;
     margin-bottom: 3rem;
     padding-block: 2rem;
-    padding-inline: 2rem;
+    padding-inline: 1rem;
     border-radius: 1rem;
+}
 
+.git-table {
+    width: 100%; 
+    overflow-x:scroll;
+}
+
+
+table { 
+border-collapse: collapse; 
+max-width: 100%; 
+}
+
+th, td { 
+border: 1px solid #ffffff; 
+padding: 0.1rem 0.6rem; 
+text-align: left; 
 }
 
 .code-pic {
@@ -60,12 +76,7 @@ h2 {
     margin-top: 1rem;
 }
 
-/* .sections:first-child {
-    padding: 0; 
-    width: 100vw;
-    margin-bottom: 2rem;
-    
-} */
+
 
 @media screen and (min-width: 768px){
     .sections{
