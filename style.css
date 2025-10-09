@@ -145,6 +145,8 @@ br {
 .page-foot__copy {
   margin-top: 1ex;
   margin-bottom: 1.5rem;
+  margin-inline: 1.5rem;
+  text-align: center;
 }
 
 /* Layout */
